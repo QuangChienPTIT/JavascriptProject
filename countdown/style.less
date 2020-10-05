@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #434a50;
+  background-color: #eff5f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.countdown-container {
+  width: 800px;
+  height: 500px;
+  border-radius: 0.375rem;
+  text-align: center;
+  user-select: none;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+  color: #2c4a64;
+  background: #fafcfb;
+  position: relative;
+  > h1 {
+    font-size: 30px;
+    margin-top: 3rem;
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+  }
+  .countdown-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    z-index: 2;
+    position: relative;
+    p {
+      font-size: 50px;
+      margin-bottom: 0rem;
+      font-weight: 600;
+      line-height: 1;
+      min-width: 70px;
+    }
+    span {
+      font-size: 0.75rem;
+    }
+  }
+  .countdown-bg,
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .countdown-bg {
+    background: #fafcfb url(img.png) center no-repeat;
+    background-position: left -249px;
+    top: 60%;
+  }
+  .overlay {
+    display: flex;
+    height: 100%;
+    z-index: 0;
+    > div {
+      flex: 1 1 auto;
+      height: 100%;
+      &:not(:last-child) {
+        border-right: 1px solid #edefef;
+      }
+      &:nth-child(3),
+      &:nth-child(7) {
+        max-width: 4%;
+      }
+    }
+  }
+}

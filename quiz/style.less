@@ -1,0 +1,93 @@
+body {
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.quiz-container {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 2.5rem 5rem 5rem 5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(100, 100, 100, 0.3);
+  max-width: 100%;
+  width: 550px;
+  @media (max-width: 500px) {
+    padding: 1rem 2rem 5rem 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  .answer-area > div {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    label {
+      padding-left: 26px;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+    }
+    .checkmark {
+      margin-top: 1px;
+      border: 2px solid #dedede;
+      border-radius: 50%;
+      position: absolute;
+      margin-top: 3px;
+      top: 0;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        transition: 0.2s;
+      }
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked ~ .checkmark:after {
+        background-color: #2196f3;
+      }
+    }
+  }
+  button {
+    appearance: none;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.125rem;
+    background-color: #4273f4;
+    color: #fff;
+    padding: 1.25rem;
+    display: block;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+}

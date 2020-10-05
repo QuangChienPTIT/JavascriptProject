@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form action="">
+        <div class="form-control success">
+          <label>Username</label>
+          <input
+            type="text"
+            placeholder="quangchien"
+            name="username"
+            id="username"
+          />
+          <i class="fas fa-check-circle success" aria-hidden="true"></i>
+          <i class="fas fa-exclamation-circle error" aria-hidden="true"></i>
+          <small></small>
+        </div>
+        <div class="form-control error">
+          <label>Email</label>
+          <input
+            type="text"
+            placeholder="quangchien@gmail.com"
+            name="gmail"
+            id="gmail"
+          />
+          <i class="fas fa-check-circle success" aria-hidden="true"></i>
+          <i class="fas fa-exclamation-circle error" aria-hidden="true"></i>
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="password"
+          />
+          <i class="fas fa-check-circle success" aria-hidden="true"></i>
+          <i class="fas fa-exclamation-circle error" aria-hidden="true"></i>
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label>Password check</label>
+          <input
+            type="password"
+            name="passwordcheck"
+            placeholder="Password check"
+            id="passwordcheck"
+          />
+          <i class="fas fa-check-circle success" aria-hidden="true"></i>
+          <i class="fas fa-exclamation-circle error" aria-hidden="true"></i>
+          <small></small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

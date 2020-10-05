@@ -1,0 +1,69 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.device-container {
+  width: 447px;
+  height: 766px;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.header > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.favouries-meal {
+  padding-left: 1rem;
+  overflow: hidden;
+  background: #eff3ff;
+}
+.favouries-meal:before,
+.favouries-meal:after {
+  background: #eff3ff;
+  width: 100%;
+  height: 3px;
+  content: "";
+  display: block;
+}
+.favouries-meal .slick-list {
+  padding-left: 0 !important;
+}
+.favouries-meal .slick-track {
+  padding: 1rem 0rem;
+}
+.favouries-meal .item {
+  padding: 0.25rem;
+  overflow: hidden;
+  text-align: center;
+}
+.favouries-meal .item > img {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 11px rgba(179, 190, 226, 0.7);
+  padding: 0.5rem;
+}
+.favouries-meal .item > p {
+  white-space: nowrap;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
